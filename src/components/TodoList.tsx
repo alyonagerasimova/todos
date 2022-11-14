@@ -15,11 +15,11 @@ export function TodoList() {
     }
     return (
         <div className="todo-list">
-            {todos.map((item) => {
-                return (
-                    <TodoItem key={item.id} todo={item}/>
-                );
-            })}
+            {/*{todos.map((item) => {*/}
+            {/*    return (*/}
+            {/*        <TodoItem key={item.id} todo={item}/>*/}
+            {/*    );*/}
+            {/*})}*/}
         </div>
     )
 }

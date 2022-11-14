@@ -2,6 +2,8 @@ import React from 'react';
 import './App.css';
 import {TodoList} from "./components/TodoList";
 import {Todo} from "./utils/Todo";
+import {Header} from "./components/Header";
+import {Footer} from "./components/Footer";
 
 function App() {
     const todo: Todo[] = [
@@ -21,7 +23,15 @@ function App() {
             <header className="App-header">
                 <h1>todos</h1>
             </header>
-            <TodoList/>
+            <main>
+                <section>
+                    <div className="todolist">
+                        <Header />
+                        <TodoList/>
+                        <Footer/>
+                    </div>
+                </section>
+            </main>
         </div>
     );
 }

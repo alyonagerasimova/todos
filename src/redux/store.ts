@@ -1,4 +1,10 @@
-import {applyMiddleware, compose, createStore} from "redux";
+import {applyMiddleware, createStore} from "redux";
 import rootReducer from "./todosSlice";
+import { composeWithDevTools } from 'redux-devtools-extension'
 
-export const store = createStore(rootReducer);
+const composedEnhancer = composeWithDevTools(
+    applyMiddleware()
+);
+
+const store = createStore(rootReducer, composedEnhancer);
+export default store;
