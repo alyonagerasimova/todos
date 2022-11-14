@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import {List} from "./components/List";
+import {TodoList} from "./components/TodoList";
 import {Todo} from "./utils/Todo";
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
             <header className="App-header">
                 <h1>todos</h1>
             </header>
-            <List todos={todo}/>
+            <TodoList/>
         </div>
     );
 }
