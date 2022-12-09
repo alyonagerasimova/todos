@@ -2,7 +2,7 @@ import {TodoAction, TodoActionsType} from "./action";
 import {Todo} from "../utils/Todo";
 import {todoAppState} from "../utils/todoAppState";
 
-const initialState: any[] = [];
+const initialState: Todo[] = [];
 
 export default function todosReducer(state = initialState, action: TodoAction) {
     switch (action.type) {
